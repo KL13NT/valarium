@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Welcome to Valarium!</title>
+			<link href='./styles.sass' rel='stylesheet'>
+			<link href='./contact.sass' rel='stylesheet'>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<nav>
+			<input id='nav' type='checkbox'>
+			<label for='nav'>
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			<img src='../Assets/VALARIUM.png'>
+			<div class='c-nav-desktop'>
+				<a href='./index.html'>Home</a>
+				<a href='./about.html'>About Us</a>
+				<a class='u-action-active' href='./contact.html'>Contact</a>
+				<a href='./blog.html'>Blog</a>
+			</div>
+		</nav>
+		<header>
+			<h1>We’d love to hear from you.</h1>
+			<p>You can fill out this form or join us to get in touch.</p>
+		</header>
+		<form>
+			<div class='c-form-input'>
+				<label >First Name</label>
+				<input type='text' placeholder='John Doe'>
+			</div>
+			<div class='c-form-input'>
+				<label>Contact (Email or Phone)</label>
+				<input type='text' placeholder='example@example.co'>
+			</div>
+			<div class='c-form-input c-form-textarea'>
+				<label>Message</label>
+				<textarea placeholder='Hello, Valarium!'></textarea>
+			</div>
+			<button class='c-action' type='submit'>send</button>
+		</form>
+	</body>
+</html>

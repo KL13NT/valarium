@@ -1,0 +1,179 @@
+@import './variables.sass'
+
+html
+	font-size: $size-base
+
+html, body
+	overflow-y: hidden
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: 'Oswald', sans-serif
+	font-weight: $weight-base
+	font-size: $size-p
+	text-rendering: optimizeLegibility
+
+a, button
+	margin: 0 1rem
+	font-size: $size-action
+	font-weight: $weight-action
+	color: $colour-nav
+	cursor: pointer
+	text-decoration: none
+	background: transparent
+	border: none
+
+h1
+	font-size: $size-h1
+	font-family: $family-headers
+	font-variant: small-caps
+	font-weight: $weight-h1
+
+.u-action-active
+	color: $colour-action
+
+.c-section
+	display: flex
+	justify-content: space-around
+	width: 95%
+	margin: 0 auto
+	align-items: center
+	p
+		white-space: pre-line
+	.c-section-description
+		width: 45%
+	.c-section-img
+		width: 45%
+		img
+			width: 100%
+
+.c-name
+	font-size: $size-name
+	font-weight: $weight-name
+	font-family: $family-headers
+	font-variant: small-caps
+
+.c-action
+	font-family: $family-p
+	font-size: $size-action
+	font-weight: $weight-action
+	text-transform: uppercase
+	margin: 0
+	color: $colour-action
+	letter-spacing: 2px
+
+header
+	display: flex
+	flex-direction: column
+	align-items: center
+	height: 100vh
+	section
+		height: 65%
+
+.u-flip-flex-column
+	flex-direction: column-reverse
+
+.u-flip-flex-row
+	flex-direction: row-reverse
+
+.c-madeby
+	margin: 2rem auto
+	a, p
+		text-align: center
+		font-family: $family-p
+		font-size: $size-mini
+		color: $colour-text
+		font-weight: $weight-p
+
+.c-hamburger
+	display: none
+
+
+
+nav
+	display: flex
+	flex-direction: row
+	justify-content: space-evenly
+	width: 70%
+	text-align: center
+	margin: 4rem auto
+	a
+		font-weight: $weight-base
+	img, input, label, span
+		display: none
+
+
+@media (max-width: 600px)
+	nav
+		margin: 0
+		margin: 2rem auto
+		padding: 0
+		width: 100%
+		height: 4rem
+		background: white
+		display: flex
+		align-items: center
+		justify-content: space-evenly
+		width: 70%
+		img
+			max-width: 100%
+			max-height: 100%
+			height: 100%
+			display: inline-block
+			width: auto
+		input
+			display: none
+		input + label
+			position: absolute
+			display: flex
+			right: 0
+			flex-direction: column
+			width: 100%
+			margin: 2rem
+			width: 10%
+			margin: 0 2rem
+			cursor: pointer
+			z-index: 11
+			-webkit-touch-callout: none
+			span
+				height: 0.4rem
+				width: 3rem
+				margin: 0.3rem
+				border-radius: 15px
+				transition: transform 0.5s cubic-bezier(0.68, -0.36, 0, 1.06), opacity 0.5s
+				display: block
+				background: #F9A826
+		input:checked ~ label
+			position: fixed
+		input:checked ~ div
+			transform: translate(0, 0)
+		input:checked + label span:nth-child(1)
+			transform: rotate(45deg)
+		input:checked + label span:nth-child(2)
+			opacity: 0
+		input:checked + label span:nth-child(3)
+			transform: rotate(-45deg)
+		div
+			display: flex
+			transition: transform 0.5s
+			transform: translate(-150%, 0)
+			position: fixed
+			height: 100%
+			width: 100%
+			background: white
+			flex-direction: column
+			margin: 0
+			align-items: center
+			top: 0
+			left: 0
+			z-index: 10
+			justify-content: center
+			padding: 0
+
+
+@media (max-width: 400px)
+	nav
+		img
+			display: none
