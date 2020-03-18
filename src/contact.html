@@ -10,7 +10,7 @@
       <meta property="og:type" content="website" />
       <meta name="description" content="Egypt's first online-only youth talent community. We help youngsters get into tech with ease. Join us on our the journey!"/>
       <meta property="og:description" content="Egypt's first online-only youth talent community. We help youngsters get into tech with ease. Join us on our the journey!" />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content="valarium.netlify.com"/>
       <meta property="og:site_name" content="Valarium" />
       <meta property="twitter:title" content="Valarium - Contact" />
       <meta property="twitter:description" content="Egypt's first online-only youth talent community. We help youngsters get into tech with ease. Join us on our the journey!" />
@@ -59,18 +59,18 @@
 			<h1>We’d love to hear from you.</h1>
 			<p>You can fill out this form or join us to get in touch.</p>
 		</header>
-		<form name='contact' netlify>
+		<form name='contact' action='/submission.html' netlify>
 			<div class='c-form-input'>
 				<label >First Name</label>
-				<input type='text' placeholder='John Doe'>
+				<input type='text' name='name' placeholder='John Doe'>
 			</div>
 			<div class='c-form-input'>
 				<label>Contact (Email or Phone)</label>
-				<input type='text' placeholder='example@example.co'>
+				<input type='text' name='contact method' placeholder='example@example.co'>
 			</div>
 			<div class='c-form-input c-form-textarea'>
 				<label>Message</label>
-				<textarea placeholder='Hello, Valarium!'></textarea>
+				<textarea name='message' placeholder='Hello, Valarium!'></textarea>
 			</div>
 			<button class='c-action' type='submit'>send</button>
 		</form>
