@@ -1,1 +1,0 @@
-{"version":3,"sources":["blog.sass"],"names":[],"mappings":"AAAA;EACC;;;AAED;EACC;IACC;;;EACD;IACC;IACA","file":"blog.07b26b36.css","sourceRoot":"..\\src","sourcesContent":["header\r\n\tmargin: 8rem 0\r\n\r\n@media (max-width: 980px)\r\n\t:root\r\n\t\ttext-align: center\r\n\tnav\r\n\t\twidth: 100%\r\n\t\tmargin: 2rem auto"]}
