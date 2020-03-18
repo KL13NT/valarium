@@ -1,0 +1,24 @@
+doctype html
+
+html(lang='en')
+	head
+		title Welcome to Valarium! - Blog
+		meta(property='og:title' content='Valarium - Blog')
+		meta(property='twitter:title' content='Valarium - Blog')
+
+		include components/head.pug
+		link(href='./blog.sass' rel='stylesheet' type='text/css')
+
+	body
+		nav
+			include components/nav.pug
+			.c-nav-desktop
+				a(href='./index.pug') Home
+				a(href='./about.pug') About Us
+				a(href='./contact.pug') Contact
+				a.u-action-active(href='./blog.pug') Blog
+
+		header
+			h1 Coming soon
+			p If you'd like to help make sure to join and talk to one of the moderators.
+			a.c-action(href='https://discord.gg/xrGAnTg') join us

@@ -1,0 +1,35 @@
+doctype html
+
+html(lang='en')
+	head
+		title Welcome to Valarium! - Contact
+		meta(property='og:title' content='Valarium - Contact')
+		meta(property='twitter:title' content='Valarium - Contact')
+
+		include components/head.pug
+		link(href='./contact.sass' rel='stylesheet' type='text/css')
+
+	body
+		nav
+			include components/nav.pug
+			.c-nav-desktop
+				a(href='./index.pug') Home
+				a(href='./about.pug') About Us
+				a.u-action-active(href='./contact.pug') Contact
+				a(href='./blog.pug') Blog
+
+		header
+			h1 We’d love to hear from you.
+			p You can fill out this form or join us to get in touch.
+
+		form(name='contact', action='/submission.pug', netlify='')
+			.c-form-input
+				label First Name
+				input(type='text', name='name', placeholder='John Doe')
+			.c-form-input
+				label Contact (Email or Phone)
+				input(type='text', name='contact method', placeholder='example@example.co')
+			.c-form-input.c-form-textarea
+				label Message
+				textarea(name='message', placeholder='Hello, Valarium!')
+			button.c-action(type='submit') send

@@ -1,0 +1,24 @@
+doctype html
+
+html(lang='en')
+	head
+		title Welcome to Valarium! - Submission
+		meta(property='og:title' content='Valarium - Submission')
+		meta(property='twitter:title' content='Valarium - Submission')
+
+		include components/head.pug
+
+	body
+		nav
+			include components/nav.pug
+			.c-nav-desktop
+				a(href='./index.pug') Home
+				a(href='./about.pug') About Us
+				a(href='./contact.pug') Contact
+				a(href='./blog.pug') Blog
+
+		header
+			h1 Form submitted successfully.
+			p
+				| We'll get back to you as soon as possible. In the meantime, feel free to join us!
+			a.c-action(href='https://discord.gg/xrGAnTg') join now

@@ -136,6 +136,9 @@ nav img, nav input, nav label, nav span {
     justify-content: space-evenly;
     width: 70%;
   }
+  nav a {
+    font-size: 5.125rem;
+  }
   nav img {
     max-width: 100%;
     max-height: 100%;
