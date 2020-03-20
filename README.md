@@ -5,11 +5,12 @@
 <img align="center" height="100px" alt="logo" src="./dist/VALARIUM.45a3c626.png">
 
 
-We help people of all ages get into tech with ease.
+<p align="center">We help people of all ages get into tech with ease.</p>
 
 </p>
 
 </center>
+
 <hr/>
 
 This repo contains the source code for the official website of [Valarium](valarium.netlify.com).
