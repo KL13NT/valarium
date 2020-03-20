@@ -25,6 +25,18 @@ There are a few things to note:
 - `Variables`: Sass variables that are used in multiple Sass files, mainly `styles`.
 - Naming: Each Pug page imports the `styles.sass` file which enforces consistent styling across the website. And also could import a specific `<pagename>.sass` file that is specific to only that page.
 
+I also used Netlify's forms to avoid using any JS in this code. *wink*
+
+
+## Guidelines for commits
+Commits follow a schema that's defined as `[<type>] <commit_message>`, where `<type>` is one of:
+- `Bug`: Bug fixes and commits related to them
+- `Feature`: Feature updates and incremental additions
+- `Docs`: Documentation updates
+- `Config`: Configuration changes
+- `Amend`: Fixing older commits and/or rebasing them
+- `Refactor`: Self-explanatory
+
 ## License
 This codebase is licensed under the Mozilla Public License Version 2.0 which grants the following:
 - Commercial use
