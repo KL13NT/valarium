@@ -1,22 +1,14 @@
+include components/nav
+include components/head
+
+
 doctype html
-
 html(lang='en')
-	head
-		title Welcome to Valarium! - Contact
-		meta(property='og:title' content='Valarium - Contact')
-		meta(property='twitter:title' content='Valarium - Contact')
-
-		include components/head.pug
+	+head('Contact')
 		link(href='./contact.sass' rel='stylesheet' type='text/css')
 
 	body
-		nav
-			include components/nav.pug
-			.c-nav-desktop
-				a(href='./index.pug') Home
-				a(href='./about.pug') About Us
-				a.u-action-active(href='./contact.pug') Contact
-				a(href='./blog.pug') Blog
+		+nav('', '', 'u-action-active')
 
 		header
 			h1 We’d love to hear from you.
