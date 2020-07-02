@@ -1,25 +1,25 @@
 {
-  "name": "valarium",
-  "version": "1.0.0",
-  "description": "Valarium official website!",
-  "main": "index.js",
-  "keywords": [],
-  "author": "Nabil <nabil.tharwat@outlook.com>",
-  "license": "MPL-2.0",
-  "scripts": {
-    "clean": "rmdir dist /S /Q",
-    "start": "parcel src/index.pug src/submission.pug",
-    "build-prod": "parcel build src/index.pug src/submission.pug"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
-    "eslint": "^6.8.0",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-imagemin": "^4.0.1",
-    "pug": "^2.0.4",
-    "sass": "^1.26.3"
-  },
-  "repository": "git@github.com:KL13NT/valarium.git"
+	"name": "valarium",
+	"version": "1.0.0",
+	"description": "Valarium official website!",
+	"main": "index.js",
+	"keywords": [],
+	"author": "Nabil <nabil.tharwat@outlook.com>",
+	"license": "MPL-2.0",
+	"scripts": {
+		"clean": "rmdir dist /S /Q",
+		"start": "parcel src/index.pug src/submission.pug",
+		"build": "parcel build src/index.pug src/submission.pug"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/core": "^7.8.7",
+		"@babel/preset-env": "^7.8.7",
+		"eslint": "^6.8.0",
+		"parcel-bundler": "^1.12.4",
+		"parcel-plugin-imagemin": "^4.0.1",
+		"pug": "^2.0.4",
+		"sass": "^1.26.3"
+	},
+	"repository": "git@github.com:KL13NT/valarium.git"
 }

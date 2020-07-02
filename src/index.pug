@@ -22,4 +22,15 @@ html(lang='en')
 					a.c-action(href='https://discord.gg/xrGAnTg') join us
 
 				.c-section-img
-					img(src='../Assets/undraw_welcoming_xvuq.svg')
+					img(src='../assets/undraw_welcoming_xvuq.svg')
+
+		script.
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on("init", function(user){
+					if (!user) {
+						window.netlifyIdentity.on("login", function() {
+							document.location.href = "/admin/";
+						});
+					}
+				});
+			}
