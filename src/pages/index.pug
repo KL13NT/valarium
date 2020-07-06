@@ -1,0 +1,36 @@
+include components/head
+include components/nav
+
+doctype html
+html(lang='en')
+	+head('Home')
+		link(href='./index.sass' rel='stylesheet' type='text/css')
+
+	body
+		header
+			+nav('u-action-active')
+
+			section.c-section
+				.c-section-description
+					h1
+						| Welcome to
+						span.c-name Valarium
+					p
+						| Egypt&apos;s first online-only youth talent community.
+						| We help people of all ages get into tech with ease.
+						| Join us on our journey!
+					a.c-action(href='https://discord.gg/xrGAnTg') join us
+
+				.c-section-img
+					img(src='../assets/undraw_welcoming_xvuq.svg')
+
+		script.
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on("init", function(user){
+					if (!user) {
+						window.netlifyIdentity.on("login", function() {
+							document.location.href = "/admin/";
+						});
+					}
+				});
+			}

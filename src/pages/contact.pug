@@ -1,0 +1,27 @@
+include components/nav
+include components/head
+
+
+doctype html
+html(lang='en')
+	+head('Contact')
+		link(href='./contact.sass' rel='stylesheet' type='text/css')
+
+	body
+		+nav('', '', 'u-action-active')
+
+		header
+			h1 We’d love to hear from you.
+			p You can fill out this form or join us to get in touch.
+
+		form(name='contact', action='/submission.pug', netlify='')
+			.c-form-input
+				label First Name
+				input(type='text', name='name', placeholder='John Doe', required='')
+			.c-form-input
+				label Contact (Email or Phone)
+				input(type='text', name='contact method', placeholder='example@example.co', required='')
+			.c-form-input.c-form-textarea
+				label Message
+				textarea(name='message', placeholder='Hello, Valarium!', required='')
+			button.c-action(type='submit') send
