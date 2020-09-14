@@ -9,7 +9,7 @@ module.exports = {
 		author: 'Nabil Tharwat',
 		siteUrl: 'https://valarium.netlify.app',
 		creator: '@Nabil_Tharwat16',
-		image: '/src/assets/OG.png',
+		image: '/static/OG.png',
 		logo: '/src/assets/logo.png',
 		name: 'Valarium',
 		menuLinks: [
