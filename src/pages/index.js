@@ -32,7 +32,7 @@ const About = () => {
 	return (
 		<>
 			<script src='https://identity.netlify.com/v1/netlify-identity-widget.js'></script>
-			<SEO description='Learn more about me' title='About' />
+			<SEO title='Home' />
 			<Layout>
 				<Header>
 					<h1>
