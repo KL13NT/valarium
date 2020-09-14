@@ -14,7 +14,12 @@ export default () => (
 		</Header>
 		<Layout>
 			<div className={styles.contact}>
-				<form name='contact' action='/submission' netlify=''>
+				<form
+					name='contact'
+					action='/submission'
+					data-netlify='true'
+					method='POST'
+				>
 					<label>Full Name</label>
 					<input
 						className='c-input'
