@@ -5,7 +5,7 @@ const hostname = 'https://valarium.netlify.app'
 
 const defaultTitle = 'Blog'
 const defaultDescription = 'Education is a right'
-const defaultOGImagePath = '/oggeneral.png'
+const defaultOGImagePath = '/OG.png'
 const defaultPath = '/'
 
 function SEO({
