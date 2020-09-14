@@ -1,0 +1,24 @@
+.navbar
+	color: white
+	display: flex
+	flex-direction: row
+	justify-content: center
+	width: 70%
+	text-align: center
+	margin: 4rem auto auto auto
+
+	a
+		color: white
+		font-weight: 700
+		margin: 0 1rem
+
+.invert
+	@extend .navbar
+
+	a
+		color: #781f99
+
+@media (max-width: 768px)
+	.navbar
+		width: 100%
+		margin: 2rem auto

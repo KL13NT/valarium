@@ -1,0 +1,83 @@
+.content > p:nth-child(2)
+	max-width: 60%
+	text-align: center
+	margin-top: 40px
+	line-height: 1
+	color: inherit
+	font-size: 2rem
+
+.header
+	display: flex
+	flex-direction: column
+	align-items: center
+	height: 100vh
+	background-color: #8103ae
+
+	nav
+		z-index: 4
+
+.full, .semi
+	@extend .header
+
+.full
+	background-image: url(../assets/good_team_1.svg), url(../assets/good_team_2.svg), url(../assets/good_team_3.svg), url(../assets/hero_pattern.svg), linear-gradient(#640386 0%, #b600f7 100%)
+	color: white
+	background-repeat: no-repeat, no-repeat, no-repeat, repeat
+	background-size: 300px, 200px, 300px, auto 80%, auto
+	background-position: 100% 0px, 0px 100%, 100% 100%, center
+
+.semi
+	height: 60vh
+	background-image: url(../assets/good_team_1.svg), url(../assets/good_team_2.svg), url(../assets/hero_pattern.svg), linear-gradient(#640386 0%, #b600f7 100%)
+	color: white
+	background-repeat: no-repeat, no-repeat, repeat
+	background-size: 300px, 200px, auto 80%, auto
+	background-position: 100% 0px, 0px 100%, center
+
+	> p:nth-child(2)
+		margin: 0
+
+.content
+	height: 100%
+	width: 100%
+	display: flex
+	z-index: 3
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	font-family: 'Catamaran', sans-serif
+
+	h1
+		font-weight: 900
+		display: block
+		font-variant: none
+		color: white
+		font-size: 5rem
+		text-align: center
+		text-transform: uppercase
+		letter-spacing: 30px
+		line-height: 1.5
+		font-family: 'Catamaran', Roboto, sans-serif
+
+@media screen and (max-width: 768px)
+	.full
+		height: max-content
+		padding: 0 0 40px 0
+
+	.full, .semi
+		background-image: url(../assets/hero_pattern.svg), linear-gradient(#640386 0%, #b600f7 100%)
+		color: white
+		background-repeat: repeat
+		background-size: auto
+		background-position: center
+
+	.content
+		margin-top: 40px
+
+		h1
+			font-size: 3.125rem
+			text-transform: uppercase
+			letter-spacing: initial
+
+		> p:nth-child(2)
+			max-width: 80%

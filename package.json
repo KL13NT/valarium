@@ -24,6 +24,9 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "gatsby-plugin-split-css": "^1.0.2",
+    "gatsby-remark-images": "^3.3.29",
+    "gatsby-remark-reading-time": "^1.1.0",
     "prettier": "2.0.5"
   },
   "keywords": [

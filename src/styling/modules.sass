@@ -1,0 +1,175 @@
+//this includes all layout containers, objects, prefixed -o or -l for layout, layout stuff
+@import './settings'
+
+
+// .o-tagsContainer
+// 	display: flex
+// 	flex-wrap: wrap
+// 	margin: 4px 0
+// 	padding: 0
+// 	width: 100%
+// 	> a
+// 		direction: ltr
+// 		text-align: left
+// 		display: inline
+// 		margin: 0 0.2rem 0 0
+// 		height: 100%
+// 		font-size: 0.7rem
+// 		padding: 6px 0
+//   	color: black
+// 		background: #f3f7f9
+// 		padding: 0 8px 0 4px
+// 		border-radius: 3px
+// 		text-transform: lowercase
+// 		&::before
+// 			content: '#'
+// 			margin: 0 2px
+// 			font-size: 0.9em
+// 		&:hover
+// 			transform: unset
+// 			color: #6a6a6a
+
+
+// .o-article-body
+// 	padding: 4rem 2rem
+// 	section p
+// 		margin: 1rem 0
+
+// .o-article-header
+// 	h1
+// 		line-height: 1.25
+// 		font-weight: 400
+// 		font-family: Cambria, Georgia, 'Times New Roman', Times, serif
+// 		text-align: center
+// 		text-transform: uppercase
+// 		margin: 1rem 0
+// 	& > div
+// 		display: flex
+// 		justify-content: space-between
+// 		align-items: center
+// 		margin: 6px 0
+// 	> div > p,
+// 	> div > a
+// 		font-size: 0.8rem
+// 		padding: 0
+// 		margin: 0
+
+.o-layout--centered
+	max-width: 800px
+	margin: 4rem auto
+	padding: 40px 0
+
+
+//TODO: fix nav-specific link margin
+
+// nav
+// 	margin: auto
+// 	margin: 4rem auto auto auto
+
+
+
+.o-article-header
+  text-align: center
+  width: 50%
+  margin: 0 auto
+
+
+h1
+  font-variant: initial
+  font-size: 5rem
+
+.o-article-header > div:nth-child(2) > p:nth-child(1)
+  font-size: 1.5rem
+
+
+p
+  /* margin: 0.5rem 0.5rem */
+  margin: 0
+
+.o-article-header > div:nth-child(2)
+  margin: 10px 0 0 0
+
+.o-article-header > div:nth-child(2) > hr:nth-child(2)
+  margin: 10px auto
+  width: 40px
+  height: 2px
+  background: red
+
+.o-article-header > div:nth-child(2) > p:nth-child(1)
+  font-weight: 700
+
+.o-article-header > div:nth-child(2)
+  margin: 40px 0
+
+
+.o-article-body
+	> section
+		width: 45%
+		margin: 40px auto 80px
+
+		h1, h2, h3, h4, h5, h6
+			margin-top: 20px
+			font-weight: 700
+			padding: 0
+
+		h1
+			font-size: 4rem
+
+		h2
+			font-size: 3.6rem
+
+		h3
+			font-size: 3.2rem
+
+		h4
+			font-size: 2.8rem
+
+		h5
+			font-size: 2.6rem
+
+		h6
+			font-size: 2.2rem
+
+		a
+			margin: 0
+			color: #781f99
+
+		blockquote
+			span
+				font-size: 2.6rem
+				line-height: 2
+
+			&::before
+				top: auto
+				font-size: 10rem
+
+		p, ul, li, img
+			margin-top: 20px
+			font-size: 1.6rem
+			line-height: 1.4
+			padding: 0
+
+		em, strong, code, pre
+			font-size: inherit
+
+
+.o-layout--centered
+	max-width: 960px
+	padding: 40px
+
+
+@media screen and (max-width: 768px)
+	.o-layout, .o-layout--centered
+		max-width: auto
+		padding: 10px
+
+	.o-article-header
+		width: 90%
+
+	.o-article-body > section
+		width: 85%
+
+
+//TODO: create PageTitle component for headers and subtitles
+.o-layout--centered > div
+	text-align: center

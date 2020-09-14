@@ -11,7 +11,48 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Title (Make it catchy ;3)', name: 'title', widget: 'string' }
+      - {
+          label: 'Path (Must start with /blog/)',
+          name: 'path',
+          widget: 'string',
+        }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          format: '"YYYY-MM-DD"',
+        }
+      - {
+          label: 'Featured Image (image file name)',
+          name: 'image',
+          widget: 'string',
+        }
+      - {
+          label: 'Featured Image Caption (Add description of image and source/artist)',
+          name: 'imageCaption',
+          widget: 'string',
+        }
+      - {
+          label: 'Featured Image Alt (Add alternative text of image)',
+          name: 'imageAlt',
+          widget: 'string',
+        }
+      - {
+          label: 'Description (60 char)',
+          name: 'description',
+          widget: 'string',
+        }
+      - { label: 'Language (ar, en)', name: 'lang', widget: 'string' }
+      - {
+          label: 'Featured (for admins and populars only)',
+          name: 'featured',
+          widget: 'boolean',
+          default: false,
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      # - {
+      #     label: 'Tags (Array of capitalised strings)',
+      #     name: 'tags',
+      #     widget: 'list',
+      #   }

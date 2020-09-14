@@ -1,0 +1,146 @@
+
+form
+	width: 35%
+	max-width: 35%
+	margin: 4rem auto 10rem auto
+
+header
+	text-align: center
+	height: auto
+
+body, html
+	overflow: auto
+
+form .c-action
+	margin: 20px auto 0
+	display: block
+
+.contact > form
+	padding: 40px
+	background:
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25)
+	flex: 1 0 50%
+	margin: 0
+	background: white
+	padding: 20px
+	border-radius: 10px
+
+	textarea
+		word-break: break-all
+		overflow-x: hidden
+		table-layout: fixed
+		border: none
+		resize: none
+		min-height: 20rem
+		max-height: 40rem
+		overflow-y: auto
+
+	label
+		font-weight: 700
+		font-size: 2rem
+		margin: 20px 0 0
+		display: block
+
+	input, textarea
+		position: relative
+		padding: 16px 16px
+		background: #23272a
+		display: inline-flex
+		align-items: center
+		box-sizing: border-box
+		transition: all .25s ease-in-out
+		line-height: 1
+		font-size: 2rem
+		font-weight: 700
+		margin: 10px auto 0 auto
+		color: white
+		border-radius: 10px
+		border: solid 2px white
+		width: 100%
+
+		&:focus
+			box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2)
+			background: #31373c
+
+	\:global
+		.c-action, .c-action--primary
+			width: 100%
+			text-align: center
+			justify-content: center
+
+.contact
+	display: flex
+	justify-content: space-evenly
+	margin: 4rem auto 10rem auto
+	width: 100%
+
+.contact > div
+	display: flex
+	flex-direction: column
+	padding-top: 40px
+	flex: 0 2 40%
+
+	> ul
+		list-style: none
+
+	li
+		font-size: 1.6rem
+
+		&::before
+			content: ''
+			display: inline-block
+			background: url(https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg)
+			position: relative
+			top:
+			width: 20px
+			height: 20px
+			z-index: 4
+			background-position: 0 0
+			background-size: 100%
+			margin-right: 20px
+			vertical-align: middle
+
+.contact > div > p:nth-child(6) > img:nth-child(1)
+	height: 30px
+	display: inline-block
+	margin: 0 20px 0 0
+
+.disclaimer
+	display: flex
+	position: relative
+	opacity: 0.7
+
+
+// EDIT HERE
+
+@media screen and (max-width: 768px)
+	.contact
+		flex-direction: column
+		align-items: center
+
+
+
+	.contact form, .contact > div
+		padding: 20px
+		max-width: 90%
+		width: 90%
+		flex: auto
+
+		textarea
+
+	.contact > div
+		padding: 0
+		margin: 40px 0
+
+		li
+			&::before
+				width: 10px
+				height: 10px
+				margin-right: 5px
+
+		h1
+			font-size: 2.275rem
+
+		p
+			font-size: 1.2rem
+			padding: 10px 0 0 0
