@@ -4,10 +4,12 @@ import Header from '../components/Header'
 import Layout from '../components/Layout'
 
 import '../styling/main.sass'
+import SEO from '../components/SEO'
 const styles = require('./contact.module.sass')
 
 export default () => (
 	<>
+		<SEO title='Contact' description="We'd love to hear your thoughts" />
 		<Header semi>
 			<h1>Contact</h1>
 			<p>We'd love to hear your thoughts.</p>
