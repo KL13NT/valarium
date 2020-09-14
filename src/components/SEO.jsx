@@ -24,6 +24,10 @@ function SEO({
 	return (
 		<Helmet>
 			<title>{finalTitle}</title>
+			<meta
+				name='google-site-verification'
+				content='Jwd5WF70ZzZgB0muYxnSlHsVh3allc411SZx25cGYTo'
+			/>
 			<meta content={finalTitle} property='og:title' />
 			<meta content='website' property='og:type' />
 			<meta content={fullDescription} name='description' />
