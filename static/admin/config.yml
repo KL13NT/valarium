@@ -18,6 +18,11 @@ collections:
           widget: 'string',
         }
       - {
+          label: 'Author (use your real name or your twitter handle)',
+          name: 'author',
+          widget: 'string',
+        }
+      - {
           label: 'Publish Date',
           name: 'date',
           widget: 'datetime',
@@ -43,7 +48,11 @@ collections:
           name: 'description',
           widget: 'string',
         }
-      - { label: 'Language (ar, en)', name: 'lang', widget: 'string' }
+      - {
+          label: 'Language (ar, en) **lowercase**',
+          name: 'lang',
+          widget: 'string',
+        }
       - {
           label: 'Featured (for admins and populars only)',
           name: 'featured',
