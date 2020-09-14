@@ -22,28 +22,31 @@ export default () => (
 					data-netlify='true'
 					method='POST'
 				>
-					<label>Full Name</label>
+					<label htmlFor='name'>Full Name</label>
 					<input
 						className='c-input'
 						type='text'
 						name='name'
+						id='name'
 						placeholder='John Doe'
 						required
 						minLength={5}
 					/>
-					<label>Contact (Email or Phone)</label>
+					<label htmlFor='method'>Contact (Email or Phone)</label>
 					<input
 						className='c-input'
 						type='text'
 						name='contact method'
+						id='method'
 						placeholder='example@example.co'
 						required
 						minLength={5}
 					/>
-					<label>Message</label>
+					<label htmlFor='message'>Message</label>
 					<textarea
 						className='c-input'
 						name='message'
+						id='message'
 						placeholder='Hello, Valarium!'
 						required
 						minLength={10}

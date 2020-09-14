@@ -17,6 +17,7 @@ export const Post = ({
 	path,
 	date,
 	image,
+	imageAlt,
 	author,
 	featured,
 	description,
@@ -55,7 +56,7 @@ export const Post = ({
 					</span>
 				</div>
 			</div>
-			<img src={image.childImageSharp.fluid.src} />
+			<img src={image.childImageSharp.fluid.src} alt={imageAlt} />
 		</Link>
 	)
 }
