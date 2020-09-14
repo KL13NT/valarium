@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../components/Layout'
-import SEO from '../components/seo'
+import SEO from '../components/SEO'
 import Navbar from '../components/Navbar'
 
 import Four0Four from '../assets/undraw_page_not_found_su7k.svg'
