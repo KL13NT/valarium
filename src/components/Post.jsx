@@ -39,11 +39,7 @@ export const Post = ({
 	const localeTimeString = messages[lang].time
 
 	return (
-		<Link
-			to={path}
-			className={`c-post ${languageClass}`}
-			data-featured={featured}
-		>
+		<li className={`c-post ${languageClass}`} data-featured={featured}>
 			<div>
 				<Link to={path}>
 					<h1>{title}</h1>
@@ -57,6 +53,6 @@ export const Post = ({
 				</div>
 			</div>
 			<img src={image.childImageSharp.fluid.src} alt={imageAlt} />
-		</Link>
+		</li>
 	)
 }

@@ -7,6 +7,8 @@ exports.createPages = async ({
 }) => {
 	const blogPostTemplate = path.resolve('src/templates/post.js')
 	const tagPageTemplate = path.resolve('src/templates/tags.js')
+	const categoryPageTemplate = path.resolve('src/templates/category.js')
+	const authorPageTemplate = path.resolve('src/templates/author.js')
 
 	const result = await graphql(`
 		{
@@ -70,7 +72,35 @@ exports.createPages = async ({
 		})
 	})
 
-	//TODO: add tags and authors
+	//TODO: classification code (tags, authors, categs)
+	// const authors = new Set([])
+
+	// posts.forEach(({ node }) => {
+	// 	if (node.frontmatter.author) authors.add(author)
+	// })
+
+	// authors.forEach(tag => {
+	// 	createPage({
+	// 		path: `/author/${tag}/`,
+	// 		component: authorPageTemplate,
+	// 		context: {}
+	// 	})
+	// })
+
+	// const categories = new Set([])
+
+	// posts.forEach(({ node }) => {
+	// 	if (node.frontmatter.category) categories.add(node.frontmatter.category)
+	// })
+
+	// categories.forEach(tag => {
+	// 	createPage({
+	// 		path: `/category/${tag}/`,
+	// 		component: categoryPageTemplate,
+	// 		context: {}
+	// 	})
+	// })
+
 	// const tags = new Set([])
 
 	// posts.forEach(({ node }) => {
