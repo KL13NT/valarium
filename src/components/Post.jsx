@@ -2,15 +2,6 @@ import React from 'react'
 
 import { Link } from 'gatsby'
 
-const messages = {
-	en: {
-		time: 'minute read'
-	},
-	ar: {
-		time: 'دقائق من القراءة'
-	}
-}
-
 export const Post = ({
 	lang,
 	title,
@@ -29,26 +20,22 @@ export const Post = ({
 		month: 'long',
 		day: 'numeric'
 	}
-	const languageClass = lang === 'ar' ? 'u-rightToLeft' : null
-	const locale = lang === 'ar' ? 'ar-EG' : 'en-US'
-	const localeDate = new Date(date).toLocaleDateString(locale, options)
 
-	const localeTimeMinutes = Math.ceil(
-		Number(readingTime.minutes)
-	).toLocaleString(locale, options)
-	const localeTimeString = messages[lang].time
+	const rtl = lang === 'ar' ? 't-rtl t-align-right' : ''
+	const localeDate = new Date(date).toLocaleDateString('en-GB', options)
+	const time = Math.ceil(Number(readingTime.minutes))
 
 	return (
-		<li className={`c-post ${languageClass}`} data-featured={featured}>
+		<li className='c-post' data-featured={featured}>
 			<div>
 				<Link to={path}>
-					<h1>{title}</h1>
+					<h1 className={rtl}>{title}</h1>
 				</Link>
-				<p>{description}</p>
+				<p className={rtl}>{description}</p>
 				<div>
 					<span>{author}</span>
 					<span>
-						{localeDate} — {localeTimeMinutes} {localeTimeString}
+						{localeDate} — {time} min read
 					</span>
 				</div>
 			</div>

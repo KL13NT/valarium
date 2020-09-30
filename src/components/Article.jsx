@@ -13,8 +13,8 @@ const ArticleHeader = ({
 	tags
 }) => (
 	<>
-		<div className={`o-article-header ${languageClass}`}>
-			<h1> {title} </h1>
+		<div className='o-article-header'>
+			<h1 className={languageClass}>{title}</h1>
 			<div>
 				<p>By {author}</p>
 				<hr />

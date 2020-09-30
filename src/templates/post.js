@@ -13,7 +13,7 @@ export default class Post extends React.Component {
 	render() {
 		const { frontmatter, html, fields } = this.props.data.markdownRemark
 		const { lang } = frontmatter
-		const languageClass = lang === 'ar' ? 'u-rightToLeft' : null
+		const languageClass = lang === 'ar' ? 't-rtl' : null
 
 		return (
 			<>

@@ -1,5 +1,32 @@
-@import './settings'
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap')
+@import './variables'
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Catamaran:wght@400;700;900&display=swap')
+
+
+html
+	font-size: 12px
+	font-family: var(--font-family-primary)
+	font-weight: 300
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	text-rendering: optimizeLegibility
+
+a, button
+	margin: 0 1rem
+	font-size: $size-action
+	font-weight: $weight-action
+	color: $colour-nav
+	cursor: pointer
+	text-decoration: none
+	background: transparent
+	border: none
+
+h1
+	font-size: $size-h1
+	font-weight: $weight-h1
+	text-transform: capitalize
 
 p,
 a,
@@ -24,9 +51,7 @@ html
 	padding: 0
 	background: #f3f7f9
 	color: #222426
-	font-family: "Cairo", "Roboto", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 	font-weight: 300
-	line-height: 1.6rem
 	word-wrap: break-word
 	text-rendering: optimizeLegibility
 	font-display: swap
@@ -68,7 +93,7 @@ blockquote
 	&::before
 		content: "\201C"
 		font-family: Arial, serif
-		font-weight: bold
+		font-weight: 900
 		color: #999
 		position: absolute
 		left: -5px

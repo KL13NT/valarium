@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './Layout.module.sass'
-
 const Layout = ({ centered, children, ...props }) => (
 	<div className={centered ? 'o-layout--centered' : null} {...props}>
 		<link
