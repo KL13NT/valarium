@@ -43,7 +43,7 @@ const About = () => {
 						Grow
 					</h1>
 					<p>
-						Egypt&apos;s first online-only youth talent community.
+						Egypt&apos;s first online-only talent community.
 						<br />
 						We help people of all ages get into tech with ease.
 					</p>
