@@ -4,7 +4,8 @@ import { Helmet } from 'react-helmet'
 const hostname = 'https://valarium.netlify.app'
 
 const defaultTitle = 'Blog'
-const defaultDescription = 'Education is a right'
+const defaultDescription =
+	'An Egyptian tech community with a focus on the people.'
 const defaultOGImagePath = '/OG.png'
 const defaultPath = '/'
 

@@ -43,9 +43,8 @@ const About = () => {
 						Grow
 					</h1>
 					<p>
-						Egypt&apos;s first online-only talent community.
-						<br />
-						We help people of all ages get into tech with ease.
+						An Egyptian non-profit online-only tech community with a focus on
+						the people.
 					</p>
 					<a className='c-action' href='https://discord.gg/xrGAnTg'>
 						Join for free

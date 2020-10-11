@@ -5,7 +5,7 @@ module.exports = {
 	siteMetadata: {
 		title: 'Valarium',
 		description:
-			"Egypt's first online-only youth talent community. We help people of all ages get into tech with ease. Join us on our the journey!",
+			"An Egyptian tech community with a focus on the people.",
 		author: 'Nabil Tharwat',
 		siteUrl: 'https://valarium.netlify.app',
 		creator: '@Nabil_Tharwat16',
