@@ -78,7 +78,7 @@ const About = () => {
 							<img src={Section3} alt='section image' />
 						</div>
 					</section> */}
-					<section className='c-section'>
+					<section className='c-section u-flip-flex-row'>
 						<div className='c-section-description'>
 							<h1>Create & participate</h1>
 							<p>
@@ -91,7 +91,7 @@ const About = () => {
 							<img src={Section2} alt='section image' />
 						</div>
 					</section>
-					<section className='c-section u-flip-flex-row'>
+					<section className='c-section'>
 						<div className='c-section-description'>
 							<h1>Work together</h1>
 							<p>
@@ -103,7 +103,7 @@ const About = () => {
 							<img src={Section4} alt='section image' />
 						</div>
 					</section>
-					<section className='c-section'>
+					<section className='c-section u-flip-flex-row'>
 						<div className='c-section-description'>
 							<h1>Transparent & free</h1>
 							<p>
