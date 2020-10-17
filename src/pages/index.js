@@ -64,6 +64,7 @@ const About = () => {
 							<img src={Section1} alt='section image' />
 						</div>
 					</section>
+		{/*
 					<section className='c-section u-flip-flex-row'>
 						<div className='c-section-description'>
 							<h1>Enhance your skills</h1>
@@ -76,7 +77,7 @@ const About = () => {
 						<div className='c-section-img'>
 							<img src={Section3} alt='section image' />
 						</div>
-					</section>
+					</section> */}
 					<section className='c-section'>
 						<div className='c-section-description'>
 							<h1>Create & participate</h1>
